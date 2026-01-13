@@ -1,8 +1,8 @@
 # Alke Wallet
 
-Proyecto frontend que simula una billetera digital (wallet), desarrollado como parte del módulo de **Fundamentos del Desarrollo Frontend**.
+Proyecto frontend que simula una billetera digital (wallet), desarrollado como parte del módulo 2 del bootcamp **Desarrollo Full Stack Python Trainee**.
 
-La aplicación permite a un usuario interactuar con funcionalidades básicas de una wallet: inicio de sesión, visualización de saldo, depósitos, transferencias y registro de transacciones, utilizando únicamente tecnologías del lado del cliente.
+La aplicación permite a un usuario interactuar con las funcionalidades básicas de una wallet: inicio de sesión, visualización de saldo, depósitos, transferencias y registro de transacciones, utilizando únicamente tecnologías del lado del cliente.
 
 ---
 
