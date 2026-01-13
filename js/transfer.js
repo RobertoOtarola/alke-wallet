@@ -1,13 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
+$(function () {
+  const recipients = [
+    "Juan Pérez",
+    "María González",
+    "Pedro Sánchez",
+    "Ana López",
+    "Carlos Torres"
+  ];
 
-  if (!form) return;
+  $("#recipient").autocomplete({
+    source: recipients
+  });
 
-  form.addEventListener("submit", (event) => {
+  const form = $("form");
+
+  form.on("submit", function (event) {
     event.preventDefault();
 
-    const recipient = document.getElementById("recipient").value.trim();
-    const amount = Number(document.getElementById("amount").value);
+    const recipient = $("#recipient").val().trim();
+    const amount = Number($("#amount").val());
 
     if (!recipient) {
       alert("Debe ingresar un destinatario");
@@ -26,11 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Actualizar saldo
     const newBalance = currentBalance - amount;
     localStorage.setItem("balance", newBalance.toString());
 
-    // Registrar transacción
     const transactions =
       JSON.parse(localStorage.getItem("transactions")) || [];
 
