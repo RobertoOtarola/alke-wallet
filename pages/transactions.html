@@ -7,35 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<script src="../js/balance.js"></script>
-
 <body>
   <header>
     <h1>Últimos movimientos</h1>
     <p>Historial de transacciones realizadas</p>
   </header>
   <main>
-    <section>
-      <table>
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Descripción</th>
-            <th>Monto</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>--/--/----</td>
-            <td>Ejemplo transacción</td>
-            <td>$0</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <nav>
-      <a href="menu.html">Volver al menú</a>
-    </nav>
-  </main>
+  <section>
+    <ul id="transactions-list"></ul>
+  </section>
+
+  <nav>
+    <a href="menu.html">Volver al menú</a>
+  </nav>
+</main>
+
+<script src="../js/transactions.js"></script>
+
 </body>
 </html>
